@@ -1,0 +1,17 @@
+rateLimitRules:
+  - clientIp: "2"
+    allowedNumberOfRequests: 100
+    timeInterval: minutes
+
+  - clientIp: "1"
+    allowedNumberOfRequests: 3
+    requestType: "login"
+    timeInterval: minutes
+
+  - account_id: "very_important_customer"
+    allowed_number_of_requests: 2
+    timeInterval: minutes
+
+  - accountId:
+    allowedNumberOfRequests: 100
+    timeInterval: minutes
