@@ -26,20 +26,4 @@ public class RateLimitController {
             return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS).body("Rate limit exceeded");
         }
     }
-
-
-//    @Autowired
-//    private RateLimiter rateLimiter;
-//    @GetMapping("/user/{id}")
-//    public String getInfo(@PathVariable("id") String id) {
-//        // gets the bucket for the user
-//        Bucket bucket = rateLimiter.resolveBucket(id);
-//
-//        // tries to consume a token from the bucket
-//        if (bucket.tryConsume(1)) {
-//            return "Hello " + id;
-//        } else {
-//            return "Rate limit exceeded";
-//        }
-//    }
 }
