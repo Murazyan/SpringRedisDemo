@@ -13,5 +13,5 @@ rateLimitRules:
     timeInterval: minutes
 
   - accountId:
-    allowedNumberOfRequests: 100
+    allowedNumberOfRequests: 1
     timeInterval: minutes
